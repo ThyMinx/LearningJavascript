@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h2>My First Website With JavaScript</h2>
+	<script>
+		function firstFunction(){
+			document.getElementById("functionText").innerHTML = "Function was called!";
+		}
+
+		function ClearFunction(){
+			document.getElementById('timeText').style.display = 'none';
+			document.getElementById('functionText').style.display = 'none';
+		}
+	</script>
+
+	<!-- Once loaded the script can be accessed anywhere else -->
+	<script src="TestJs.js"></script>
+</head>
+
+<body>
+	<!-- JavaScript Here -->
+	<p><button type="button" onclick="document.getElementById('timeText').innerHTML = Date() 
+	document.getElementById('timeText').style.display = 'block'">Date and Time</button></p>
+
+	<!-- HTML Here -->
+	<p id="timeText"></p>
+	<p id="javascriptText"></p>
+	<p id="functionText"></p>
+
+	<!-- JavaScript Here: for this script to work it must be after the element is created -->
+	<script>
+		document.getElementById("javascriptText").innerHTML = "My First JavaScript";
+	</script>
+
+	<p><button type="button" onclick="firstFunction() 
+	document.getElementById('functionText').style.display = 'block'">Run Function</button></p>
+	<p><button type="button" onclick="ClearFunction()">Clear</button></p>
+	<p><button type="button" onclick="aFunction()">Clear from separate source</button></p>
+	<p><button type="button" onclick="AlertFunction()">Alert Me</button></p>
+	<p><button type="button" onclick="MathsFunction()">Maths!</button></p>
+	<p><button type="button" onclick="VariablesFunction()">Variables!</button></p>
+	<p><button type="button" onclick="AlertFunction()"></button></p>
+
+</body>
+</html>
