@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<noscript>window.alert("Please enable javascript support!")</noscript>
+
 	<h2>My First Website With JavaScript</h2>
 	<script>
 		function firstFunction(){
@@ -39,7 +41,14 @@
 	<p><button type="button" onclick="AlertFunction()">Alert Me</button></p>
 	<p><button type="button" onclick="MathsFunction()">Maths!</button></p>
 	<p><button type="button" onclick="VariablesFunction()">Variables!</button></p>
-	<p><button type="button" onclick="AlertFunction()"></button></p>
 
+	<p>Log On</p>
+	<form>
+		Username: 
+		<input type="text" id="username" value="username"><br/>
+		Password: 
+		<input type="text" id="password" value="password"><br/>
+		<input type="submit" onclick="LogOnFunction()" value="Log In!">
+	</form>
 </body>
 </html>
